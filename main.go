@@ -9,13 +9,13 @@ func main() {
 	fmt.Scan(&lim)
 
 	for i := 0; i < lim; i++ {
-		fact := 1.0
+		var fact uint64 = 1
 		for j := i; j > 0; j-- {
-			fact *= float64(j)
+			fact *= uint64(j)
 		}
-		e += (1.0 / fact)
+		e += (1.0 / float64(fact))
 	}
 
-	fmt.Printf("%.17f", e)
+	fmt.Print(e)
 
 }
