@@ -8,7 +8,7 @@ func main() {
 
 	fmt.Scan(&lim)
 
-	for i := 0; i < lim; i++ {
+	for i := 0; i <= lim; i++ {
 		var fact uint64 = 1
 		for j := i; j > 0; j-- {
 			fact *= uint64(j)
