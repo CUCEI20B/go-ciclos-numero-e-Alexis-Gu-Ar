@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	var e float64
+	var e float64 = 0
 	var lim int
 
 	fmt.Scan(&lim)
@@ -13,7 +13,7 @@ func main() {
 		for j := i; j > 0; j-- {
 			fact *= float64(j)
 		}
-		e = e + (1.0 / fact)
+		e += (1.0 / fact)
 	}
 	fmt.Print(e)
 }
