@@ -9,11 +9,11 @@ func main() {
 	fmt.Scan(&lim)
 
 	for i := 0; i < lim; i++ {
-		fact := 1
+		fact := 1.0
 		for j := i; j > 0; j-- {
-			fact *= j
+			fact *= float64(j)
 		}
-		e = e + (1.0 / float64(fact))
+		e = e + (1.0 / fact)
 	}
 	fmt.Print(e)
 }
