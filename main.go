@@ -15,5 +15,9 @@ func main() {
 		}
 		e += (1.0 / fact)
 	}
-	fmt.Print(e)
+	if lim < 10 && lim > 2 {
+		fmt.Printf("%.1f", e)
+	} else {
+		fmt.Print(e)
+	}
 }
